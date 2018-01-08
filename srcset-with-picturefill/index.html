@@ -12,15 +12,45 @@
   <body>
     
     <div class="wrapper">
-      
+
+      <picture>
+        <source
+           media="(orientation: landscape)"
+           srcset="img/banner-large.jpg 2048w, 
+           img/banner-medium.jpg 1400w, 
+           img/banner-small.jpg 800w
+        "/>
+
+        <source
+           srcset="
+           img/banner-square-large.jpg 1000w, 
+           img/banner-square-medium.jpg 800w,
+        "/>
+
+        <img src="img/banner-medium.jpg" alt="nick" class="banner-image"/>
+      </picture>
+
+      <!-- <img 
+      sizes="50vw,
+      (min-width: 1024px) 512px"
+      srcset="
+      img/banner-large.jpg 2048w,
+      img/banner-medium.jpg 1400w,
+      img/banner-small.jpg 800w,
+      img/banner-square-large.jpg 648w,
+      img/banner-square-medium.jpg 320w,
+      "
+      class="banner-image" src="img/banner-medium.jpg" alt="nick">
+       -->
       <div class="content-block">
         
         <div class="profile-description">
         <div class="profile-image">
           <img
-          srcset="img/photo-@1x.jpg 1x"          
+          srcset="img/photo-@1x.jpg 1x,
+          img/photo-@2x.jpg 2x"          
            src="img/photo-@1x.jpg"
-          alt="">
+          alt="pictute of flower">
         </div>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere nec quam vitae aliquet. Etiam sodales feugiat gravida. Donec tincidunt facilisis arcu, ut sagittis eros iaculis a. Nam fringilla erat id lorem pellentesque ornare. Curabitur sed interdum tellus. Etiam imperdiet, dui id condimentum ullamcorper, lectus nibh venenatis lectus, id ullamcorper nibh nibh id dolor. Suspendisse tempor turpis vel commodo consequat. Phasellus at posuere velit. Sed vehicula lacinia mauris sit amet mollis. Etiam semper leo blandit massa molestie congue. Sed ac purus ipsum.</p>
@@ -32,6 +62,6 @@
         
     </div>
     
-    
+    <script src="js/index.js"></script>
   </body>
 </html>
